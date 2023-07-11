@@ -17,6 +17,6 @@ namespace RecordsSystem.DataAccessLayer.Interfaces.EmployeeDetailRepository
             return await _dbContext.EmployeeDetails.ToListAsync();
         }
 
-        // Other methods for CRUD
+        // Other methods for CRUDS
     }
 }
