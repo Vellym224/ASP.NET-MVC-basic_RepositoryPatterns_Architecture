@@ -1,7 +1,9 @@
+using Microsoft.EntityFrameworkCore;
 using RecodsSystem.BusinessLogicLayer.AddressDetailRepository;
 using RecodsSystem.BusinessLogicLayer.CompanyDetailRepository;
 using RecodsSystem.BusinessLogicLayer.EmployeeDetailRepository;
 using RecodsSystem.BusinessLogicLayer.RecUserDetailRepository;
+using RecordsSystem.DataAccessLayer.Data;
 using RecordsSystem.DataAccessLayer.Interfaces;
 using RecordsSystem.DataAccessLayer.Interfaces.AddressDetailRepository;
 using RecordsSystem.DataAccessLayer.Interfaces.CompanyDetailRepository;
@@ -12,9 +14,10 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-//builder.Services.AddDbContext<ApplicationDbContext>(options =>
-//    options.UseSqlServer(builder.Configuration
-//    .GetConnectionString("ApplicationConnectionString")));
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+    options.UseSqlServer(builder.Configuration
+    .GetConnectionString("ApplicationConnectionString")));
+
 builder.Services.AddScoped<IRecUseDetailRepository, RecUserDetailRepository>();
 builder.Services.AddScoped<IRecUserDetailService, RecUserDetailService>();
 
