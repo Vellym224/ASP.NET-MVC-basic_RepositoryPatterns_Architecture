@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33122.133
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecordsSystem.PresentationLayer", "RecordsSystem.PresentationLayer\RecordsSystem.PresentationLayer.csproj", "{E2190917-D0D7-4C2D-8689-186D62E933B6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecordsSystem", "RecordsSystem.PresentationLayer\RecordsSystem.csproj", "{E2190917-D0D7-4C2D-8689-186D62E933B6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecordsSystem.DataAccessLayer", "RecordsSystem.DataAccessLayer\RecordsSystem.DataAccessLayer.csproj", "{DC00328E-4FB4-4629-BE44-3B9951DA13FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecodsSystem.BusinessLogicLayer", "RecodsSystem.BusinessLogicLayer\RecodsSystem.BusinessLogicLayer.csproj", "{0DC595BF-13FE-42E7-B993-EBB91ADCBD5E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{DC00328E-4FB4-4629-BE44-3B9951DA13FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DC00328E-4FB4-4629-BE44-3B9951DA13FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DC00328E-4FB4-4629-BE44-3B9951DA13FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DC595BF-13FE-42E7-B993-EBB91ADCBD5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DC595BF-13FE-42E7-B993-EBB91ADCBD5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DC595BF-13FE-42E7-B993-EBB91ADCBD5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DC595BF-13FE-42E7-B993-EBB91ADCBD5E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
