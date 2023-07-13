@@ -6,15 +6,15 @@ namespace RecordsSystem.DataAccessLayer.Interfaces.CompanyDetailRepository
 {
     public class CompanyDetailRepository : ICompanyDetailRepository
     {
-        private readonly ApplicationDbContext _dbContext;
+        private readonly ApplicationDbContext _applicationDbContext;
 
-        public CompanyDetailRepository(ApplicationDbContext dbContext)
+        public CompanyDetailRepository(ApplicationDbContext applicationDbContext)
         {
-            _dbContext = dbContext;
+            _applicationDbContext = applicationDbContext;
         }
         public async Task<IEnumerable<CompanyDetail>> GetCompanyDetailsAsync()
         {
-            return await _dbContext.CompanyDetails.ToListAsync();
+            return await _applicationDbContext.CompanyDetails.ToListAsync();
         }
 
         // Other methods for CRUD

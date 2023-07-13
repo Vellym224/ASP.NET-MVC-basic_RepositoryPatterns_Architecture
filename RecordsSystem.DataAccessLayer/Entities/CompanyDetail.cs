@@ -5,6 +5,7 @@ namespace RecordsSystem.DataAccessLayer.Entities
 {
     public class CompanyDetail
     {
+
         [MaxLength(100)]
         [ForeignKey(nameof(EmailAddress))]
         public string? EmailAddress { get; set; }

@@ -6,15 +6,15 @@ namespace RecordsSystem.DataAccessLayer.Interfaces.AddressDetailRepository
 {
     public class AddressDetailRepository : IAddressDetailRepository
     {
-        private readonly ApplicationDbContext _dbContext;
+        private readonly ApplicationDbContext _applicationDbContext;
 
-        public AddressDetailRepository(ApplicationDbContext dbContext)
+        public AddressDetailRepository(ApplicationDbContext applicationDbContext)
         {
-            _dbContext = dbContext;
+            _applicationDbContext = applicationDbContext;
         }
         public async Task<IEnumerable<AddressDetail>> GetAddressDetailsAsync()
         {
-            return await _dbContext.AddressesDetails.ToListAsync();
+            return await _applicationDbContext.AddressesDetails.ToListAsync();
         }
 
         // Other methods for CRUD

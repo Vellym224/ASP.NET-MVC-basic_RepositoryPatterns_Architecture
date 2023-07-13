@@ -5,6 +5,7 @@ namespace RecordsSystem.DataAccessLayer.Entities
 {
     public class RecUserDetail
     {
+
         [Key]
         public int Id { get; set; }
         [ForeignKey(nameof(Name))]

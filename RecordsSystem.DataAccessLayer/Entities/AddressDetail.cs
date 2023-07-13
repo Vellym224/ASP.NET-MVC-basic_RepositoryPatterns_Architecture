@@ -6,12 +6,9 @@ namespace RecordsSystem.DataAccessLayer.Entities
     public class AddressDetail
     {
         [MaxLength(100)]
-        public string? Country { get; set; }
-
         [ForeignKey(nameof(Country))]
-
+        public string? Country { get; set; }
         public RecUserDetail? RecUserDetail { get; set; }
-
         public int RecUserDetailId { get; set; }
 
         [MaxLength(100)]
@@ -31,3 +28,4 @@ namespace RecordsSystem.DataAccessLayer.Entities
         public string? ComplexName { get; set; }
     }
 }
+

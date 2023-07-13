@@ -7,15 +7,15 @@ namespace RecordsSystem.DataAccessLayer.Interfaces.RecUserDetailRepository
 
     public class RecUserDetailRepository : IRecUseDetailRepository
     {
-        private readonly ApplicationDbContext _dbContext;
+        private readonly ApplicationDbContext _applicationDbContext;
 
-        public RecUserDetailRepository(ApplicationDbContext dbContext)
+        public RecUserDetailRepository(ApplicationDbContext applicationDbContext)
         {
-            _dbContext = dbContext;
+            _applicationDbContext = applicationDbContext;
         }
         public async Task<IEnumerable<RecUserDetail>> GetRecUserDetailsAsync()
         {
-            return await _dbContext.RecUserDetails.ToListAsync();
+            return await _applicationDbContext.RecUserDetails.ToListAsync();
         }
 
         // Other methods for CRUD

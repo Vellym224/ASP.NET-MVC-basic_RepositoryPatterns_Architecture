@@ -15,5 +15,6 @@ namespace RecodsSystem.BusinessLogicLayer.CompanyDetailRepository
         {
             return await _companyDetailRepository.GetCompanyDetailsAsync();
         }
+
     }
 }

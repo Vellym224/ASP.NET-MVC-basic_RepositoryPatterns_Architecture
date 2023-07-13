@@ -18,5 +18,6 @@ namespace RecordsSystem.Controllers.RecUserDetailController
         }
 
         // Other CRUD OPERATIONS
+
     }
 }

@@ -17,5 +17,6 @@ namespace RecodsSystem.BusinessLogicLayer.RecUserDetailRepository
         }
 
 
+
     }
 }

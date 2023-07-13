@@ -6,15 +6,15 @@ namespace RecordsSystem.DataAccessLayer.Interfaces.EmployeeDetailRepository
 {
     public class EmployeeDetailRepository : IEmployeeDetailRepository
     {
-        private readonly ApplicationDbContext _dbContext;
+        private readonly ApplicationDbContext _applicationDbContext;
 
-        public EmployeeDetailRepository(ApplicationDbContext dbContext)
+        public EmployeeDetailRepository(ApplicationDbContext applicationDbContext)
         {
-            _dbContext = dbContext;
+            _applicationDbContext = applicationDbContext;
         }
         public async Task<IEnumerable<EmployeeDetail>> GetEmployeeDetailsAsync()
         {
-            return await _dbContext.EmployeeDetails.ToListAsync();
+            return await _applicationDbContext.EmployeeDetails.ToListAsync();
         }
 
         // Other methods for CRUDS
