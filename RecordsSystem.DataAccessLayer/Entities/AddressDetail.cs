@@ -5,6 +5,7 @@ namespace RecordsSystem.DataAccessLayer.Entities
 {
     public class AddressDetail
     {
+        [Key]
         [MaxLength(100)]
         [ForeignKey(nameof(Country))]
         public string? Country { get; set; }

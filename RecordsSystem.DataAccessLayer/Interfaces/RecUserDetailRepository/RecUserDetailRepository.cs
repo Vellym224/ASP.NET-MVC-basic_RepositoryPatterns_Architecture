@@ -11,7 +11,7 @@ namespace RecordsSystem.DataAccessLayer.Interfaces.RecUserDetailRepository
 
         public RecUserDetailRepository(ApplicationDbContext applicationDbContext)
         {
-            _applicationDbContext = applicationDbContext;
+            _applicationDbContext = _applicationDbContext;
         }
         public async Task<IEnumerable<RecUserDetail>> GetRecUserDetailsAsync()
         {

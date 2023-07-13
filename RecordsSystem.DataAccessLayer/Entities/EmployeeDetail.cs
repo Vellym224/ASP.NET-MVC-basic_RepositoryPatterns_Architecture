@@ -5,7 +5,7 @@ namespace RecordsSystem.DataAccessLayer.Entities
 {
     public class EmployeeDetail
     {
-
+        [Key]
         [MaxLength(100)]
         [ForeignKey(nameof(Department))]
         public string? Department { get; set; }
